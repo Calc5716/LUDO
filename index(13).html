@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo 13 squares per side</title>
+    <link rel="stylesheet" href="./style(13).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="ludoContainer">
+        <div class="ludoBoard">
+            <div id="redBoard" class="board">
+                <div>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece redPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece redPiece"></i>
+                    </span>
+                    <span>
+                         <i class = "fa-solid fa-location-pin piece redPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece redPiece"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="greenPath" class="verticalPath">
+                <div class="ludoBox" id = "r11"></div>
+                <div class="ludoBox" id = "r12"></div>
+                <div class="ludoBox" id = "r13"></div>
+                <div class="ludoBox" id = "r10"></div>
+                <div class="ludoBox greenLudoBox" id = "gh1"></div>
+                <div class="ludoBox greenLudoBox" id = "g1"></div>
+                <div class="ludoBox" id = "r9"></div>
+                <div class="ludoBox greenLudoBox" id = "gh2"></div>
+                <div class="ludoBox" id = "g2"></div>
+                <div class="ludoBox" id = "r8"></div>
+                <div class="ludoBox greenLudoBox" id = "gh3"></div>
+                <div class="ludoBox" id = "g3"></div>
+                <div class="ludoBox" id = "r7"></div>
+                <div class="ludoBox greenLudoBox" id = "gh4"></div>
+                <div class="ludoBox" id = "g4"></div>
+                <div class="ludoBox" id = "r6"></div>
+                <div class="ludoBox greenLudoBox" id = "gh5"></div>
+                <div class="ludoBox" id = "g5"></div>
+            </div>
+            <div id="greenBoard" class="board">
+                <div>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece greenPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece greenPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece greenPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece greenPiece"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="redPath" class="horizontalPath">
+                <div class="ludoBox" id = "b13"></div>
+                <div class="ludoBox redLudoBox" id = "r1"></div>
+                <div class="ludoBox" id = "r2"></div>
+                <div class="ludoBox" id = "r3"></div>
+                <div class="ludoBox" id = "r4"></div>
+                <div class="ludoBox" id = "r5"></div>
+                <div class="ludoBox" id = "b12"></div>
+                <div class="ludoBox redLudoBox" id = "rh1"></div>
+                <div class="ludoBox redLudoBox" id = "rh2"></div>
+                <div class="ludoBox redLudoBox" id = "rh3"></div>
+                <div class="ludoBox redLudoBox" id = "rh4"></div>
+                <div class="ludoBox redLudoBox" id = "rh5"></div>
+                <div class="ludoBox" id = "b11"></div>
+                <div class="ludoBox" id = "b10"></div>
+                <div class="ludoBox" id = "b9"></div>
+                <div class="ludoBox" id = "b8"></div>
+                <div class="ludoBox" id = "b7"></div>
+                <div class="ludoBox" id = "b6"></div>
+            </div>
+            <div id="winZone"></div>
+            <div id="yellowPath" class="horizontalPath">
+                <div class="ludoBox" id = "g6"></div>
+                <div class="ludoBox" id = "g7"></div>
+                <div class="ludoBox" id = "g8"></div>
+                <div class="ludoBox" id = "g9"></div>
+                <div class="ludoBox" id = "g10"></div>
+                <div class="ludoBox" id = "g11"></div>
+                <div class="ludoBox yellowLudoBox" id = "yh5"></div>
+                <div class="ludoBox yellowLudoBox" id = "yh4"></div>
+                <div class="ludoBox yellowLudoBox" id = "yh3"></div>
+                <div class="ludoBox yellowLudoBox" id = "yh2"></div>
+                <div class="ludoBox yellowLudoBox" id = "yh1"></div>
+                <div class="ludoBox" id = "g12"></div>
+                <div class="ludoBox" id = "y5"></div>
+                <div class="ludoBox" id = "y4"></div>
+                <div class="ludoBox" id = "y3"></div>
+                <div class="ludoBox" id = "y2"></div>
+                <div class="ludoBox yellowLudoBox" id = "y1"></div>
+                <div class="ludoBox" id = "g13"></div>
+            </div>
+            <div id="blueBoard" class="board">
+                <div>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece bluePiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece bluePiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece bluePiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece bluePiece"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="bluePath" class="verticalPath">
+                <div class="ludoBox" id = "b5"></div>
+                <div class="ludoBox blueLudoBox" id = "bh5"></div>
+                <div class="ludoBox" id = "y6"></div>
+                <div class="ludoBox" id = "b4"></div>
+                <div class="ludoBox blueLudoBox" id = "bh4"></div>
+                <div class="ludoBox" id = "y7"></div>
+                <div class="ludoBox" id = "b3"></div>
+                <div class="ludoBox blueLudoBox" id = "bh3"></div>
+                <div class="ludoBox" id = "y8"></div>
+                <div class="ludoBox" id = "b2"></div>
+                <div class="ludoBox blueLudoBox" id = "bh2"></div>
+                <div class="ludoBox" id = "y9"></div>
+                <div class="ludoBox blueLudoBox" id = "b1"></div>
+                <div class="ludoBox blueLudoBox" id = "bh1"></div>
+                <div class="ludoBox" id = "y10"></div>
+                <div class="ludoBox" id = "y13"></div>
+                <div class="ludoBox" id = "y12"></div>
+                <div class="ludoBox" id = "y11"></div>
+            </div>
+            <div id="yellowBoard" class="board">
+                <div>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece yellowPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece yellowPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece yellowPiece"></i>
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-location-pin piece yellowPiece"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "./script.js"></script>
+</body>
+</html>

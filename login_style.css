@@ -1,0 +1,104 @@
+
+
+body{
+    background-color: #fefae0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    margin-top: 60px;
+    border: 2px transparent;
+    border-radius: 5px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fdf0d5;
+    padding-left: 50px;
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+#squares{
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    font-size: large;
+}
+
+#squares:hover{
+    border: 6px solid;
+    border-color: #a2d2ff;
+}
+
+#pieces{
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    font-size: large;
+}
+
+#pieces:hover{
+    border: 6px solid;
+    border-color: #a2d2ff;
+}
+
+p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #669bbc;
+    color: white;
+    border: none;
+}
+
+#submit:hover{
+    background-color: #003049;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#submit:active{
+    background-color: #669bbc;
+    cursor: pointer;
+}
+
+#inner2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 50% 0 0 50%;
+    background-color: #003049;
+    color: white;
+    font-weight: bold;
+}
+
+#main_info_login{
+    height:100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
