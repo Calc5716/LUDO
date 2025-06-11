@@ -1,7 +1,7 @@
 // Note: localStorage usage needs to be replaced with in-memory storage for web artifacts
 // For now, using default values
-let squares = 52; // Default value instead of localStorage.getItem("squares");
-let pieces = 4;   // Default value instead of localStorage.getItem("pieces");
+let squares = localStorage.getItem("squares");
+let pieces = localStorage.getItem("pieces");
 
 squares = parseInt(squares);
 pieces = parseInt(pieces);
