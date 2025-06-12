@@ -603,7 +603,7 @@ const turnForUser = async (e) => {
     await delay(array.length*175); 
 
     cut.sentMeToBoard(); 
-    currentPlayerTurnStatus = ture; 
+    currentPlayerTurnStatus = true; 
     return;
   }
 
