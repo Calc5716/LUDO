@@ -78,7 +78,10 @@
 
 #winZone{
     grid-area: winZone;
+    background-image: url("LUDO HOME ICON.png");
+    background-size:cover;
 }
+
 
 .verticalPath{
     display: grid;
@@ -237,10 +240,6 @@
 .bluePiece{
     color: var(--blue);
     z-index: 100;
-}
-
-#winZone{
-    background: rgb(21, 245, 122)
 }
 
 /*Roll*/
