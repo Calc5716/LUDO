@@ -89,7 +89,7 @@ class PlayerPieces {
       let indexOfPathEntry = array.findIndex(obj=>obj === this.homePathEntry); 
       let newSlicedArray = array.slice(0,indexOfPathEntry); 
       if (newSlicedArray.length < diceResult) { 
-        let remainingLength = diceResult = newSlicedArray.length; 
+        let remainingLength = diceResult - newSlicedArray.length; 
         let secondPart = homePathEntries [this.team].slice(0, remainingLength); 
         newSlicedArray = newSlicedArray.concat(secondPart); 
       } 
@@ -109,7 +109,7 @@ class PlayerPieces {
     this.score = 0; 
     this.position = this.initialPosition;
     this.status = 0; 
-    let element = document.querySelector(`[piece_id="${this.id}"]`); 
+    let element = document.querySelector(`[piece_id="${this.playerId}"]`); 
     let toAppendDiv = document.getElementById(this.initialPosition) ;
     toAppendDiv.appendChild(element);
   }
