@@ -208,15 +208,15 @@
 
 @keyframes glowPulse {
     0% {
-        filter: brightness(1.2);
+        filter: brightness(1.4);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
     50% {
-        filter: brightness(1.5);
+        filter: brightness(2.1);
         box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
     }
     100% {
-        filter: brightness(1.2);
+        filter: brightness(1.4);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 }
@@ -285,4 +285,47 @@
 
 .yellow-piece{
     color:var(--yellow);
+}
+
+
+#declaredWinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index:9999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas{
+    z-index: 9999 !important;
+}
+
+#declaredWinner div{
+    width:650px;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999 !important;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+
+#declaredWinner div button{
+    padding: 8px 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #2b2b2b;
+    color: white;
+    text-transform: uppercase;
+    border: none;
 }
